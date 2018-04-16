@@ -1,0 +1,29 @@
+.block {
+	border-radius: 5px;
+	padding: 5px 15px;
+	font-size: 18px;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	background-color: #55acee;
+	box-shadow: 0px 2px 0px 0px #3C93D5;
+	cursor: pointer;
+
+	&:active {
+		transform: translate(0px, 3px);
+		box-shadow: 0px 1px 0px 0px;
+	}
+
+	&:hover {
+		background-color: #6FC6FF;
+	}
+}
+
+.disabled,
+.disabled:hover {
+	opacity: .6;
+	cursor: default;
+	background-color: #55acee;
+}
